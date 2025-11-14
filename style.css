@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #001c55;
+    font-family: sans-serif, Verdana, Geneva, Tahoma, ;
+    color: #ffffff;
+    min-height: 100vh;
+}
+main {
+    padding: 20px 50px;
+}
+
+.part1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+}
+
+.part1 img {
+    width: 50px;
+    height: 40px;
+}
+
+.part1 .nav-bar {
+    width: 90%;
+    height: 40px;
+    background-color: #003366;
+    display: flex;
+    align-items: center;       
+    justify-content: flex-end; 
+    padding-right: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #003368;
+}
+
+.part1 .nav-bar nav {
+    display: flex;
+    gap: 25px;
+    justify-content: end;
+
+}
+
+.part1 a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight:500;
+}
+
+
+/* Registration */
+h1, h3 {
+    padding: 0px 20px;
+}
+.register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 250px;
+    background-color: #489fb5;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+.register input{
+    width: 100%;
+    height: 30px;
+    margin: 1.2%;
+    padding-left: 5px;
+    border-radius: 10px;
+    border: none;
+}
+
+#checkbox {
+    width: 15px;
+}
+
+.register input:nth-of-type(6){
+    background-color: #6eeb83;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.register input:nth-of-type(6):hover{
+    background-color: #53c76b;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    
+}
+
+.reg-footer{
+    width: 100%;             
+    background-color: #002855;
+    color: #ffffff;           
+    text-align: center;       
+    padding: 15px 10px;       
+    font-size: 14px; 
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.9em;      
+}
+
+#login {
+    width: 60px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #6eeb83;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+#login:hover{
+    background-color: #53c76b;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+ 
+}
+
+#login a {
+    text-decoration: none;
+    color: black;
+}
+
+@media (min-width:400px) {
+    .register{
+        height: 500px;
+
+    }
+
+    .register input {
+        height: 50px;
+    }
+
+    #login {
+        width: 100px;
+    }
+}
