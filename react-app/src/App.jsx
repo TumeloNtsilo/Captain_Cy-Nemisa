@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Assessment from './pages/Assessment';
 import NewsFeed from './pages/NewsFeed';
 import Dashboard from './pages/Dashboard';
+import CompanySearch from './pages/CompanySearch';
 import './App.css';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
             <Route path="/assessment" element={<Assessment />} />
             <Route path="/news" element={<NewsFeed />} />
             <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/company-search" element={<CompanySearch />} />
           </Routes>
         </main>
         <footer className="footer">

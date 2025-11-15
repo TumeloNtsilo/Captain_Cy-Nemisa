@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import CompanySearchBar from '../components/CompanySearchBar';
 import './Home.css';
 
 function Home() {
@@ -7,8 +8,8 @@ function Home() {
       <section className="hero">
         <h1>Captain Cy – Your Digital Safety Guide</h1>
         <p className="hero-description">
-          In today's world, online threats are everywhere. Captain Cy helps you understand 
-          your cybersecurity risk through an easy assessment, provides personalized advice, 
+          In today's world, online threats are everywhere. Captain Cy helps you understand
+          your cybersecurity risk through an easy assessment, provides personalized advice,
           and keeps you updated with the latest cyber attacks. Stay informed, stay safe.
         </p>
         <Link to="/assessment" className="cta-button">
@@ -21,7 +22,7 @@ function Home() {
           <div className="feature-icon">🛡️</div>
           <h3>Persona Assessment</h3>
           <p>
-            Answer 10 questions about your digital habits and discover your cyber persona. 
+            Answer 10 questions about your digital habits and discover your cyber persona.
             Get personalized risk analysis and actionable security tips.
           </p>
           <Link to="/assessment" className="feature-link">Start Assessment →</Link>
@@ -31,7 +32,7 @@ function Home() {
           <div className="feature-icon">📰</div>
           <h3>Live Cyber News</h3>
           <p>
-            Stay updated with the latest cybercrime incidents happening in South Africa 
+            Stay updated with the latest cybercrime incidents happening in South Africa
             and globally. Real-time feed of phishing, breaches, and scams.
           </p>
           <Link to="/news" className="feature-link">View News Feed →</Link>
@@ -41,12 +42,14 @@ function Home() {
           <div className="feature-icon">📊</div>
           <h3>Risk Dashboard</h3>
           <p>
-            Explore comprehensive analytics on cyber threats, common vulnerabilities, 
+            Explore comprehensive analytics on cyber threats, common vulnerabilities,
             and trending attack patterns through interactive visualizations.
           </p>
           <Link to="/dashboard" className="feature-link">View Dashboard →</Link>
         </div>
       </section>
+
+      <CompanySearchBar />
 
       <section className="stats">
         <div className="stat-item">

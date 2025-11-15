@@ -6,7 +6,7 @@ Your Captain Cy cybersecurity awareness platform has been successfully scaffolde
 
 ## 🎯 What's Been Built
 
-### Three Main Sections:
+### Four Main Sections:
 
 1. **📋 Persona Assessment** (`/assessment`)
    - 10-question cybersecurity quiz
@@ -14,13 +14,21 @@ Your Captain Cy cybersecurity awareness platform has been successfully scaffolde
    - Personalized risk analysis and action plans
    - 5 distinct personas from "Password Recycler" to "Cyber Guardian"
 
-2. **📰 Live Cyber News Feed** (`/news`)
+2. **🔍 Company Verification** (`/company-search`) 🆕
+   - Search companies by name or registration number
+   - Trust score system (0-100)
+   - CIPC registration verification
+   - Director and address information
+   - Online presence analysis
+   - Warning system for suspicious companies
+
+3. **📰 Live Cyber News Feed** (`/news`)
    - Real-time threat updates
    - Category filtering (Phishing, Breaches, SIM Swap, etc.)
    - Ready for API integration
    - Mock data included for demo
 
-3. **📊 Risk Dashboard** (`/dashboard`)
+4. **📊 Risk Dashboard** (`/dashboard`)
    - Power BI embed integration
    - Step-by-step setup instructions
    - Suggested metrics and visualizations

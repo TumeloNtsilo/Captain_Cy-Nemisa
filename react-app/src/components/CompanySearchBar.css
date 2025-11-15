@@ -1,0 +1,138 @@
+.company-search-section {
+  background: linear-gradient(135deg, #489fb5 0%, #6eeb83 100%);
+  padding: 50px 40px;
+  border-radius: 15px;
+  margin: 60px 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.search-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.search-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.search-header h2 {
+  color: #001c55;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.search-header p {
+  color: #003366;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.search-form {
+  max-width: 700px;
+  margin: 0 auto 30px;
+}
+
+.search-input-wrapper {
+  display: flex;
+  gap: 10px;
+  background-color: #ffffff;
+  padding: 8px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.search-input {
+  flex: 1;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #001c55;
+  background-color: transparent;
+  outline: none;
+}
+
+.search-input::placeholder {
+  color: #7a9fb5;
+}
+
+.search-button {
+  padding: 15px 30px;
+  background-color: #001c55;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.search-button:hover {
+  background-color: #003366;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 28, 85, 0.4);
+}
+
+.search-info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #001c55;
+  font-weight: 500;
+  padding: 8px 16px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  font-size: 0.95rem;
+}
+
+.info-icon {
+  color: #001c55;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .company-search-section {
+    padding: 30px 20px;
+  }
+
+  .search-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .search-header p {
+    font-size: 1rem;
+  }
+
+  .search-input-wrapper {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search-button {
+    width: 100%;
+  }
+
+  .search-info {
+    gap: 10px;
+  }
+
+  .info-item {
+    font-size: 0.85rem;
+    padding: 6px 12px;
+  }
+}
+

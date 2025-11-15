@@ -22,7 +22,16 @@ A comprehensive cybersecurity awareness platform built with React that helps use
 - Ready for integration with news APIs (NewsAPI, GNews, Mediastack)
 - South African and global threat coverage
 
-### 3. **Risk Dashboard**
+### 3. **Company Verification** 🆕
+- Search and verify company legitimacy
+- Trust score system (0-100)
+- CIPC registration verification
+- Director information
+- Online presence analysis
+- Warning system for suspicious companies
+- Ready for CIPC BizPortal and Google API integration
+
+### 4. **Risk Dashboard**
 - Power BI dashboard integration
 - Comprehensive analytics on:
   - User persona distribution
