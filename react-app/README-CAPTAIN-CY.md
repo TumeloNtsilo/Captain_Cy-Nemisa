@@ -31,7 +31,18 @@ A comprehensive cybersecurity awareness platform built with React that helps use
 - Warning system for suspicious companies
 - Ready for CIPC BizPortal and Google API integration
 
-### 4. **Risk Dashboard**
+### 4. **Digital Footprint Search - "The Ghost Hunter"** 👻 🆕
+- Discover your digital exposure across the internet
+- Interactive graph visualization with Vis.js
+- Have I Been Pwned API integration for breach data
+- Social media presence analysis
+- Public records discovery
+- Exposure score (0-100) with risk levels
+- Impact scores for each finding
+- Remediation guides with action buttons
+- Multi-type search (Email/Name/Phone)
+
+### 5. **Risk Dashboard**
 - Power BI dashboard integration
 - Comprehensive analytics on:
   - User persona distribution

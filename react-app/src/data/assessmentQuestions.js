@@ -112,73 +112,6 @@ export const assessmentQuestions = [
 ];
 
 export const cyberPersonas = {
-  "The Password Recycler": {
-    range: [0, 8],
-    description: "You tend to reuse passwords, making you vulnerable to credential stuffing attacks.",
-    vulnerabilities: [
-      "Multiple accounts at risk if one password is compromised",
-      "Easy target for brute force attacks",
-      "Vulnerable to data breach cascades"
-    ],
-    actionPlan: [
-      "Use a password manager to generate and store unique passwords",
-      "Enable multi-factor authentication on all accounts",
-      "Change passwords on your most important accounts immediately",
-      "Never reuse passwords across different services"
-    ],
-    riskLevel: "High",
-    color: "#ff4444"
-  },
-  "The Risky WiFi User": {
-    range: [9, 16],
-    description: "You frequently use public WiFi, exposing your data to potential interception.",
-    vulnerabilities: [
-      "Man-in-the-middle attacks on public networks",
-      "Data interception and eavesdropping",
-      "Session hijacking risks"
-    ],
-    actionPlan: [
-      "Use a VPN when connecting to public WiFi",
-      "Avoid accessing sensitive accounts on public networks",
-      "Turn off auto-connect to WiFi networks",
-      "Use mobile data for banking and sensitive transactions"
-    ],
-    riskLevel: "High",
-    color: "#ff8800"
-  },
-  "The Oversharer": {
-    range: [17, 24],
-    description: "You share too much personal information online, making you a target for social engineering.",
-    vulnerabilities: [
-      "Identity theft through publicly available information",
-      "Targeted phishing attacks using personal details",
-      "Social engineering and impersonation risks"
-    ],
-    actionPlan: [
-      "Review and limit what you share on social media",
-      "Adjust privacy settings to 'Friends Only'",
-      "Remove birthdates, phone numbers, and addresses from public profiles",
-      "Be cautious about location sharing"
-    ],
-    riskLevel: "Medium",
-    color: "#ffaa00"
-  },
-  "The Cautious Clicker": {
-    range: [25, 30],
-    description: "You're generally careful but have some risky habits that need attention.",
-    vulnerabilities: [
-      "Occasional susceptibility to sophisticated phishing",
-      "Minor security gaps in your digital hygiene"
-    ],
-    actionPlan: [
-      "Stay vigilant about suspicious links and emails",
-      "Keep all software and apps updated",
-      "Review security settings regularly",
-      "Continue learning about new cyber threats"
-    ],
-    riskLevel: "Low",
-    color: "#88cc00"
-  },
   "The Cyber Guardian": {
     range: [0, 5],
     description: "Excellent! You practice strong cybersecurity habits and are well-protected.",
@@ -194,6 +127,73 @@ export const cyberPersonas = {
     ],
     riskLevel: "Very Low",
     color: "#00cc44"
+  },
+  "The Cautious Clicker": {
+    range: [6, 12],
+    description: "You're generally careful but have some risky habits that need attention.",
+    vulnerabilities: [
+      "Occasional susceptibility to sophisticated phishing",
+      "Minor security gaps in your digital hygiene"
+    ],
+    actionPlan: [
+      "Stay vigilant about suspicious links and emails",
+      "Keep all software and apps updated",
+      "Review security settings regularly",
+      "Continue learning about new cyber threats"
+    ],
+    riskLevel: "Low",
+    color: "#88cc00"
+  },
+  "The Oversharer": {
+    range: [13, 18],
+    description: "You share too much personal information online, making you a target for social engineering.",
+    vulnerabilities: [
+      "Identity theft through publicly available information",
+      "Targeted phishing attacks using personal details",
+      "Social engineering and impersonation risks"
+    ],
+    actionPlan: [
+      "Review and limit what you share on social media",
+      "Adjust privacy settings to 'Friends Only'",
+      "Remove birthdates, phone numbers, and addresses from public profiles",
+      "Be cautious about location sharing"
+    ],
+    riskLevel: "Medium",
+    color: "#ffaa00"
+  },
+  "The Risky WiFi User": {
+    range: [19, 24],
+    description: "You frequently use public WiFi, exposing your data to potential interception.",
+    vulnerabilities: [
+      "Man-in-the-middle attacks on public networks",
+      "Data interception and eavesdropping",
+      "Session hijacking risks"
+    ],
+    actionPlan: [
+      "Use a VPN when connecting to public WiFi",
+      "Avoid accessing sensitive accounts on public networks",
+      "Turn off auto-connect to WiFi networks",
+      "Use mobile data for banking and sensitive transactions"
+    ],
+    riskLevel: "High",
+    color: "#ff8800"
+  },
+  "The Password Recycler": {
+    range: [25, 30],
+    description: "You tend to reuse passwords, making you vulnerable to credential stuffing attacks.",
+    vulnerabilities: [
+      "Multiple accounts at risk if one password is compromised",
+      "Easy target for brute force attacks",
+      "Vulnerable to data breach cascades"
+    ],
+    actionPlan: [
+      "Use a password manager to generate and store unique passwords",
+      "Enable multi-factor authentication on all accounts",
+      "Change passwords on your most important accounts immediately",
+      "Never reuse passwords across different services"
+    ],
+    riskLevel: "Critical",
+    color: "#ff4444"
   }
 };
 

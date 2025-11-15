@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import CompanySearchBar from '../components/CompanySearchBar';
+import DigitalFootprintSearch from '../components/DigitalFootprintSearch';
 import './Home.css';
 
 function Home() {
@@ -50,6 +51,8 @@ function Home() {
       </section>
 
       <CompanySearchBar />
+
+      <DigitalFootprintSearch />
 
       <section className="stats">
         <div className="stat-item">

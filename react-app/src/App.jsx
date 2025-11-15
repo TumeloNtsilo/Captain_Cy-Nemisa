@@ -5,6 +5,7 @@ import Assessment from './pages/Assessment';
 import NewsFeed from './pages/NewsFeed';
 import Dashboard from './pages/Dashboard';
 import CompanySearch from './pages/CompanySearch';
+import DigitalFootprint from './pages/DigitalFootprint';
 import './App.css';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
             <Route path="/news" element={<NewsFeed />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/company-search" element={<CompanySearch />} />
+            <Route path="/digital-footprint" element={<DigitalFootprint />} />
           </Routes>
         </main>
         <footer className="footer">
