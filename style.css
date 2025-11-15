@@ -54,8 +54,16 @@ main {
 
 
 /* Registration */
-h1, h3 {
-    padding: 0px 20px;
+.intro{
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    padding-top: 15px;
+}
+.intro img {
+    width: 50px;
+    height: 40px;
+    margin-right: 20px;
 }
 .register {
     display: flex;
