@@ -12,7 +12,26 @@ const PORT = process.env.PORT || 5000;
 
 
 /** This is the Middleware**/
-app.use(cors());
+// Configure CORS to allow requests from your frontend
+const allowedOrigins = [
+  'http://localhost:5173', // Local development
+  'http://localhost:3000', // Alternative local port
+  process.env.FRONTEND_URL, // Production frontend URL (set in Vercel env vars)
+];
+
+app.use(cors({
+  origin: function (origin, callback) {
+    // Allow requests with no origin (like mobile apps or curl requests)
+    if (!origin) return callback(null, true);
+
+    if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  credentials: true
+}));
 app.use(express.json());
 
 /**Supabase client**/
