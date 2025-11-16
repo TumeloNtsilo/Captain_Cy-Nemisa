@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { supabase } from "../supabaseClient";
 import "./Register.css";
 
 export default function Register() {
@@ -13,7 +14,10 @@ export default function Register() {
 
   const handleRegister = async (e) => {
     e.preventDefault();
+    setMessage("Registering...");
+
     try {
+      // Try backend first
       const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:5000";
       const res = await fetch(`${apiUrl}/auth/register`, {
         method: "POST",
@@ -21,7 +25,7 @@ export default function Register() {
         body: JSON.stringify({
           email,
           password,
-          fullName,
+          full_name: fullName,
           age: parseInt(age),
           gender
         }),
@@ -34,11 +38,39 @@ export default function Register() {
         setTimeout(() => {
           navigate("/login");
         }, 1500);
+        return;
       } else {
-        setMessage(data.error || "Registration failed");
+        throw new Error(data.error || "Backend registration failed");
       }
-    } catch (err) {
-      setMessage("Server error");
+    } catch (backendError) {
+      console.log("Backend failed, trying Supabase Auth fallback...", backendError);
+
+      // FALLBACK: Use Supabase Auth directly
+      try {
+        const { data, error } = await supabase.auth.signUp({
+          email,
+          password,
+          options: {
+            data: {
+              full_name: fullName,
+              age: parseInt(age),
+              gender: gender
+            }
+          }
+        });
+
+        if (error) throw error;
+
+        if (data.user) {
+          setMessage("Registration successful! (Fallback mode) Redirecting to login...");
+          setTimeout(() => {
+            navigate("/login");
+          }, 1500);
+        }
+      } catch (supabaseError) {
+        console.error("Both backend and Supabase failed:", supabaseError);
+        setMessage("Registration failed. Please try again.");
+      }
     }
   };
 
